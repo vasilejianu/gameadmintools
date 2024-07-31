@@ -43,8 +43,8 @@ foreach ($feature in $features) {
 Install-PackageProvider -Name NuGet -Force
 
 # Install PSWindowsUpdate module and run Windows Update
-Install-Module PSWindowsUpdate -Confirm:$false -Force
-Get-WindowsUpdate -Install -AcceptAll -IgnoreReboot
+#Install-Module PSWindowsUpdate -Confirm:$false -Force
+#Get-WindowsUpdate -Install -AcceptAll -IgnoreReboot
 
 # Restart the computer to apply changes
 Restart-Computer -Force
