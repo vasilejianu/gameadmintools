@@ -33,6 +33,9 @@ $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";"
 # Install Python 3.12.0 using Chocolatey
 choco install -y python --version=3.12.0
 
+# Install 7-Zip using Chocolatey
+choco install -y 7zip
+
 # Install specific Windows Features
 $features = @('Web-Mgmt-Tools', 'Web-FTP-Server', 'WAS')
 foreach ($feature in $features) {
